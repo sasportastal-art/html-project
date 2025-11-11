@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Tickets</h1>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- יצירת תאי הזנת נתונים בטופס  -->
+            <form action="/signup" method="get" autocomplete="on">
+                <fieldset id="buyerInfo">
+                    <legend>Buyer Information</legend>
+                    <div>
+                        <label for="name">Full Name *</label>
+                        <input type="text" name="name" required  placeholder="Your name ">
+                    </div>
+                    <div>
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" required autocomplete="on" placeholder="you@example.com">
+                    </div>
+                </fieldset>
+
+                <!-- סרגל בחירת אופציות   -->
+                <fieldset id="orderDt">
+                    <legend>Order Detalis</legend>
+                    <label for="Tktype">Ticket Type</label>
+                    <select name="Tktype" required >
+                        <option value="">Day 1</option>
+                        <option value="">Day 2</option>
+                        <option value="">Day 3</option>
+                    </select>
+
+                <!-- div כך ששניהם יהיו באותו checkbox יצירת  -->
+                    <div>
+                        <span>Extras</span>
+                        <div>
+                            <input type="checkbox" name="camping">
+                            <label for="camping">Camping</label>
+                            <input type="checkbox" name="merch">
+                            <label for="merch">Merch Bundle</label>
+                        </div>
+                    </div>
+                <!-- option ו  select  בחירה לכמות כרטיסים בעזרת -->
+                    <div>
+                        <label for="quantity">Quantity</label>
+                        <select name="quantity" required>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">other</option>
+                        </select>
+                    </div>
+                <!-- יצירת תיבת טקסט  -->
+                    <div>
+                        <label for="note">Notes</label>
+                        <textarea name="note" rows="3" maxlength="500" placeholder="Any special requests?"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="button" onclick="alert('Place Order!')">Place Order</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+        <section>
+            <h2>Simple Price Table</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Price(USD)</th>   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Day Pass</td>
+                        <td>59</td>
+                    </tr>
+
+                    <tr>
+                        <td>Full Festival</td>
+                        <td>149</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><em>Tip:</em> Check the <a href="#artist">artists list</a> before choosing your day. </p>
+        </section>
+    </main>
+    <footer>
+        <p>Questions? Email us anytime.</p>
+    </footer>
+    
+</body>
+</html>
