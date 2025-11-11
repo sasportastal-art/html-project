@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artists</title>
 </head>
 <body>
+    <header>
+        <h1>Artists</h1>
+        <nav>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section id="lineup">
+            <h2>Festival Lineup</h2>
+            <p>A curated selection of <strong>independent</strong> and <em>alternative</em> acts. Below is a simple table (with basic attributes) summarizing set times.</p>
+
+            <table border="1">
+                <!-- שלב 1:נבנה כותרות ראשונות לטבלה (עבור העמודות ) -->
+                <thead>
+                    <tr>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Stage</th>
+                        <th scope="col">Day</th>
+                        <th scope="col">Time</th>
+                    </tr>
+                </thead>
+                <!-- שלב 2 : נבנה את גוף הטבלה ונתייחס לכך כבנייה בשורות -->
+                <tbody>
+                    <tr>
+                        <td>Solar Echoes</td>
+                        <td>Main</td>
+                        <td>Friday</td>
+                        <td>20:00</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Velvet Pines</td>
+                        <td>Forest</td>
+                        <td>Saturday</td>
+                        <td>18:30</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Midnight Atlas</td>
+                        <td>Riverside</td>
+                        <td>Sunday</td>
+                        <td>21:15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="genres">
+            <h3>Genres You'll Hear</h3>
+            <ol>
+                <li>India Rock</li>
+                <li>Dream Pop</li>
+                <li>Lo-Fi Folk</li>
+            </ol>
+        </section>
+
+        <section id="details">
+            <p>Want more details? <a href="tickets.html#buyerInfo">Order tickets</a> or <a href="index.html#highlights">return to highlights</a>.</p>
+            <p>Note: schedule is subject to change.</p>
+        </section>
+    </main>
+    <footer>
+        <p>See you at the fest!</p>
+    </footer>
     
 </body>
 </html>
